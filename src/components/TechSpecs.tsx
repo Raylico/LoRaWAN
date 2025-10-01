@@ -72,23 +72,85 @@ const TechSpecs = () => {
               <tbody>
                 <tr className="border-b border-border/50">
                   <td className="py-3 px-4 text-muted-foreground">Frequência</td>
-                  <td className="py-3 px-4">868 MHz (Europa), 915 MHz (América)</td>
+                  <td className="py-3 px-4">
+                    <div className="space-y-1">
+                      <div>868 MHz (Europa - EU868), 915 MHz (América - US915)</div>
+                      <div className="text-sm text-muted-foreground">433 MHz (Ásia), 923 MHz (Japão, Coreia)</div>
+                    </div>
+                  </td>
                 </tr>
                 <tr className="border-b border-border/50">
                   <td className="py-3 px-4 text-muted-foreground">Topologia</td>
-                  <td className="py-3 px-4">Estrela de estrelas (Star-of-stars)</td>
+                  <td className="py-3 px-4">
+                    <div className="space-y-1">
+                      <div>Estrela de estrelas (Star-of-stars)</div>
+                      <div className="text-sm text-muted-foreground">Dispositivos → Gateways → Servidor de Rede → Servidor de Aplicação</div>
+                    </div>
+                  </td>
                 </tr>
                 <tr className="border-b border-border/50">
                   <td className="py-3 px-4 text-muted-foreground">Segurança</td>
-                  <td className="py-3 px-4">Criptografia AES-128</td>
+                  <td className="py-3 px-4">
+                    <div className="space-y-1">
+                      <div>Criptografia AES-128 em duas camadas</div>
+                      <div className="text-sm text-muted-foreground">Network Session Key + Application Session Key</div>
+                      <div className="text-sm text-muted-foreground">Autenticação OTAA (Over-The-Air Activation) ou ABP (Activation By Personalization)</div>
+                    </div>
+                  </td>
                 </tr>
                 <tr className="border-b border-border/50">
                   <td className="py-3 px-4 text-muted-foreground">Capacidade</td>
-                  <td className="py-3 px-4">Milhares de dispositivos por gateway</td>
+                  <td className="py-3 px-4">
+                    <div className="space-y-1">
+                      <div>Milhares de dispositivos por gateway (típico: 5.000-10.000)</div>
+                      <div className="text-sm text-muted-foreground">Limitado pelo duty cycle regulatório (1% na Europa, 4% nos EUA)</div>
+                    </div>
+                  </td>
+                </tr>
+                <tr className="border-b border-border/50">
+                  <td className="py-3 px-4 text-muted-foreground">Modulação</td>
+                  <td className="py-3 px-4">
+                    <div className="space-y-1">
+                      <div>LoRa CSS (Chirp Spread Spectrum)</div>
+                      <div className="text-sm text-muted-foreground">Spreading Factor: SF7 a SF12 (trade-off entre alcance e taxa de dados)</div>
+                    </div>
+                  </td>
+                </tr>
+                <tr className="border-b border-border/50">
+                  <td className="py-3 px-4 text-muted-foreground">Taxa de Dados</td>
+                  <td className="py-3 px-4">
+                    <div className="space-y-1">
+                      <div>0.3 kbps (SF12) a 50 kbps (SF7)</div>
+                      <div className="text-sm text-muted-foreground">Payload máximo: 242 bytes (depende do SF e região)</div>
+                    </div>
+                  </td>
+                </tr>
+                <tr className="border-b border-border/50">
+                  <td className="py-3 px-4 text-muted-foreground">Duty Cycle</td>
+                  <td className="py-3 px-4">
+                    <div className="space-y-1">
+                      <div>1% na Europa (sub-banda 868.0-868.6 MHz)</div>
+                      <div className="text-sm text-muted-foreground">Sem restrição nos EUA, mas limitado por dwell time (400ms)</div>
+                    </div>
+                  </td>
+                </tr>
+                <tr className="border-b border-border/50">
+                  <td className="py-3 px-4 text-muted-foreground">Latência</td>
+                  <td className="py-3 px-4">
+                    <div className="space-y-1">
+                      <div>1-10 segundos (típico para Classe A)</div>
+                      <div className="text-sm text-muted-foreground">Classe B: latência programável (ping slots). Classe C: &lt;1 segundo</div>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td className="py-3 px-4 text-muted-foreground">Custo</td>
-                  <td className="py-3 px-4">Baixo custo de implementação e manutenção</td>
+                  <td className="py-3 px-4">
+                    <div className="space-y-1">
+                      <div>Módulo LoRa: $2-10 USD. Gateway: $100-500 USD</div>
+                      <div className="text-sm text-muted-foreground">Sem custos de licenciamento de espectro. Redes públicas disponíveis (The Things Network)</div>
+                    </div>
+                  </td>
                 </tr>
               </tbody>
             </table>

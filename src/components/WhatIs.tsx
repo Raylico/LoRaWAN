@@ -20,10 +20,15 @@ const WhatIs = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">Comunicação Inteligente</h3>
+                <p className="text-muted-foreground mb-3">
+                  LoRaWAN (Long Range Wide Area Network) é um protocolo de comunicação LPWAN (Low Power Wide Area Network) 
+                  baseado na tecnologia de modulação LoRa (Long Range). Foi desenvolvido pela LoRa Alliance, 
+                  uma associação aberta sem fins lucrativos fundada em 2015.
+                </p>
                 <p className="text-muted-foreground">
-                  LoRaWAN (Long Range Wide Area Network) é um protocolo de comunicação sem fio projetado 
-                  especialmente para dispositivos IoT que precisam enviar pequenas quantidades de dados 
-                  através de longas distâncias.
+                  Utiliza espectro de frequência ISM (Industrial, Scientific and Medical) não licenciado, 
+                  permitindo transmissão de dados sem custos de licenciamento. Opera em topologia estrela-de-estrelas 
+                  (star-of-stars), onde dispositivos finais se comunicam com gateways centrais.
                 </p>
               </div>
             </div>
@@ -33,10 +38,16 @@ const WhatIs = () => {
                 <Zap className="w-6 h-6 text-secondary" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Eficiência Energética</h3>
+                <h3 className="text-xl font-semibold mb-2">Eficiência Energética Extrema</h3>
+                <p className="text-muted-foreground mb-3">
+                  Dispositivos LoRaWAN podem operar por 5-10 anos com uma única bateria AA devido ao consumo 
+                  ultrabaixo de energia. O protocolo utiliza três classes de dispositivos (A, B e C) otimizadas 
+                  para diferentes cenários de consumo.
+                </p>
                 <p className="text-muted-foreground">
-                  Os dispositivos podem funcionar por anos com uma única bateria, enviando dados 
-                  periodicamente sem drenar energia rapidamente.
+                  Classe A: Consumo mínimo, ideal para sensores que apenas transmitem dados periodicamente. 
+                  Classe B: Recebem dados em horários programados. Classe C: Sempre escutando, maior consumo 
+                  mas resposta instantânea.
                 </p>
               </div>
             </div>
@@ -47,9 +58,14 @@ const WhatIs = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">Alcance Impressionante</h3>
+                <p className="text-muted-foreground mb-3">
+                  O alcance varia de 2-5 km em ambientes urbanos densos até 15 km em áreas rurais abertas. 
+                  Em condições ideais e linha de visão direta, pode alcançar até 50 km.
+                </p>
                 <p className="text-muted-foreground">
-                  Pode cobrir até 15 km em áreas rurais e 2-5 km em áreas urbanas, conectando 
-                  dispositivos que estão muito longe para Wi-Fi ou Bluetooth.
+                  A tecnologia de modulação chirp spread spectrum permite que sinais LoRa penetrem paredes 
+                  e obstáculos melhor que tecnologias convencionais, mantendo comunicação mesmo em ambientes 
+                  desafiadores como porões e estruturas metálicas.
                 </p>
               </div>
             </div>
